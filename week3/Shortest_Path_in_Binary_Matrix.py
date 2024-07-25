@@ -14,10 +14,14 @@ class Solution:
         if grid[0][0] == 1 or grid[row_len - 1][col_len - 1] == 1:
             return shortest_dist
 
+        # BFS 진행할 큐 선언
         queue = deque()
+
+        # queue(x좌표, y좌표, 거리)
         queue.append((0, 0, 1))
         visited[0][0] = True
 
+        # BFS 진행
         while queue:
             cur_r, cur_c, cur_dist = queue.popleft()
 
