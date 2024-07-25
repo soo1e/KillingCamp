@@ -12,7 +12,7 @@ class Solution:
             # Queue 생성
             q = deque()
 
-            # 시작점을 Queue에 등록 후 방문 목록에 이에 해당하는 인덱스 초기화
+            # 시작점을 Queue에 등록 후 방문 목록에 이에 해당되는 인덱스 초기화
             q.append(start_v)
             visited[start_v] = True
 
